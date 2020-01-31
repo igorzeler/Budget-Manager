@@ -10,6 +10,8 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
+            Income income1 = new Income();
+
         }
     }
 }
