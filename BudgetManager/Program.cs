@@ -16,7 +16,7 @@ namespace BudgetManager
             income1.Amount = 1500.0M;
             income1.Date = new DateTime(2019, 5, 21);
             
-            Console.WriteLine($"{income1.Id} {income1.Name} {income1.Amount} {income1.Date}");
+            Console.WriteLine($"{income1.Id} {income1.Name} {income1.Amount}zł {income1.Date}");
             Console.ReadKey();
         }
     }
