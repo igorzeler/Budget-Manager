@@ -9,6 +9,6 @@ namespace BudgetManager
     class Outcome
     {
         public int Id;
-        
+        public string Name;
     }
 }
