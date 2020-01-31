@@ -8,5 +8,6 @@ namespace BudgetManager
 {
     class Income
     {
+        public int Id;
     }
 }
