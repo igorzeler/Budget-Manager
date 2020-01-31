@@ -11,7 +11,10 @@ namespace BudgetManager
         static void Main(string[] args)
         {
             Income income1 = new Income();
-
+            income1.Id = 1;
+            income1.Name = "Salary";
+            income1.Amount = 1500.0M;
+            income1.Date = new DateTime(2019, 5, 21);
         }
     }
 }
