@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="File.cs" />
     <Compile Include="Income.cs" />
+    <Compile Include="List.cs" />
     <Compile Include="Outcome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
