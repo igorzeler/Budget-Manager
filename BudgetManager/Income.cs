@@ -10,5 +10,6 @@ namespace BudgetManager
     {
         public int Id;
         public string Name;
+        public decimal Amount;
     }
 }
