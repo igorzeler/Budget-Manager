@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BudgetManager
+namespace BudgetManager.DB
 {
-    class List
+    class File
     {
     }
 }
