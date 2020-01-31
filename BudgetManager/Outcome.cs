@@ -8,5 +8,7 @@ namespace BudgetManager
 {
     class Outcome
     {
+        public int Id;
+        
     }
 }
