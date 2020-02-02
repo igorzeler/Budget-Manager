@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.BL
 {
-    class Income
+    class Income: Money
     {
-        public int Id;
-        public string Name;
-        public decimal Amount;
-        public DateTime Date;
+        
     }
 }
