@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.BL
 {
-    class Income: Money
+    class Income: Transaction
     {
         
     }
