@@ -15,10 +15,7 @@ namespace BudgetManager
 
 
             Outcome outcome1 = new Outcome();
-            outcome1.Id = 1;
-            outcome1.Name = "Shoping";
-            outcome1.Amount = 234.0M;
-            outcome1.Date = new DateTime(2019, 5, 21);
+
 
             Console.WriteLine($"{income1.Id} {income1.Name} {income1.Amount}zł {income1.Date.ToShortDateString()}");
             Console.WriteLine($"{outcome1.Id} {outcome1.Name} {outcome1.Amount}zł {outcome1.Date.ToShortDateString()}");
