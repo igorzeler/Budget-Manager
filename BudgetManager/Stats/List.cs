@@ -10,5 +10,10 @@ namespace BudgetManager.Stats
     class List
     {
         private Transaction _transaction;
+
+        public List(Transaction transaction)
+        {
+            _transaction = transaction;
+        }
     }
 }
