@@ -15,6 +15,5 @@ namespace BudgetManager.BL
             Name = name;
             Date = date;
         }
-        
     }
 }
