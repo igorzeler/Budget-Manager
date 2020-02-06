@@ -10,7 +10,10 @@ namespace BudgetManager.BL
     {
         public Income(int id, decimal amount, string name, DateTime date)
         {
-
+            Id = id;
+            Amount = amount;
+            Name = name;
+            Date = date;
         }
         
     }
