@@ -8,6 +8,10 @@ namespace BudgetManager.BL
 {
     class Income: Transaction
     {
+        public Income(int id, decimal amount, string name, DateTime date)
+        {
+
+        }
         
     }
 }
