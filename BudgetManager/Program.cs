@@ -17,7 +17,7 @@ namespace BudgetManager
             Outcome outcome1 = new Outcome();
 
 
-            Console.WriteLine($"{income1.Id} {income1.Name} {income1.Amount}zł {income1.Date.ToShortDateString()}");
+            
             Console.WriteLine($"{outcome1.Id} {outcome1.Name} {outcome1.Amount}zł {outcome1.Date.ToShortDateString()}");
             Console.ReadKey();
         }

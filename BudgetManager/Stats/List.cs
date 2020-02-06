@@ -18,7 +18,7 @@ namespace BudgetManager.Stats
 
         public void DisplayLane()
         {
-
+            Console.WriteLine($"{_transaction.Id} {_transaction.Name} {_transaction.Amount}zł {_transaction.Date.ToShortDateString()}");
         }
     }
 }
