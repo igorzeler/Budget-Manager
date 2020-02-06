@@ -16,7 +16,7 @@ namespace BudgetManager
             List list = new List(income1);
             Outcome outcome1 = new Outcome();
 
-
+            list.DisplayLane();
             
             Console.WriteLine($"{outcome1.Id} {outcome1.Name} {outcome1.Amount}zł {outcome1.Date.ToShortDateString()}");
             Console.ReadKey();
