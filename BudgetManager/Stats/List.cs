@@ -15,5 +15,10 @@ namespace BudgetManager.Stats
         {
             _transaction = transaction;
         }
+
+        public void DisplayLane()
+        {
+
+        }
     }
 }
