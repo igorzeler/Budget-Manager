@@ -8,9 +8,9 @@ namespace BudgetManager.BL
 {
     abstract class Transaction
     {
-        public int Id;
-        public string Name;
-        public decimal Amount;
-        public DateTime Date;
+        public int Id { get; protected set; }
+        public string Name { get; protected set; }
+        public decimal Amount { get; protected set; }
+        public DateTime Date { get; protected set; }
     }
 }
