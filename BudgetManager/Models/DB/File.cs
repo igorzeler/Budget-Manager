@@ -12,12 +12,12 @@ namespace Models.BudgetManager.DB
     {
         Transaction IDatabase.Read()
         {
-            throw new NotImplementedException();
+            
         }
 
         void IDatabase.Write(Transaction transaction)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
