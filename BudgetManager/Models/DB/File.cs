@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BudgetManager.DB
+namespace Models.BudgetManager.DB
 {
     class File
     {

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BudgetManager.Stats
+namespace Models.BudgetManager.BL
 {
-    class Summary
+    class Outcome: Transaction
     {
+
     }
 }

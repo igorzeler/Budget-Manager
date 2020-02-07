@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BudgetManager.BL
+namespace Models.BudgetManager.BL
 {
     abstract class Transaction
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BudgetManager.Stats
+namespace Models.BudgetManager.Stats
 {
-    class List
+    class Summary
     {
     }
 }

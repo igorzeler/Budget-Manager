@@ -43,14 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\Transaction.cs" />
-    <Compile Include="DB\File.cs" />
-    <Compile Include="BL\Income.cs" />
-    <Compile Include="Stats\List.cs" />
-    <Compile Include="BL\Outcome.cs" />
+    <Compile Include="Models\BL\Transaction.cs" />
+    <Compile Include="Models\DB\File.cs" />
+    <Compile Include="Models\BL\Income.cs" />
+    <Compile Include="Models\DB\IDatabase.cs" />
+    <Compile Include="Models\Stats\List.cs" />
+    <Compile Include="Models\BL\Outcome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stats\Summary.cs" />
+    <Compile Include="Models\Stats\Summary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
