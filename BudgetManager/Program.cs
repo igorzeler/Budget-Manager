@@ -14,7 +14,7 @@ namespace BudgetManager
         static void Main(string[] args)
         {
             IDatabase database = new File();
-            Income income1 = ;
+            Transaction income1 = ;
 
             List list = new List(income1);
             Outcome outcome1 = new Outcome();
