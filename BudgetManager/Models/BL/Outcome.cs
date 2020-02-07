@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.BudgetManager.BL
+namespace BudgetManager.Models.BL
 {
     class Outcome: Transaction
     {
