@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetManager.Models.DB;
 using Models.BudgetManager.BL;
+using Models.BudgetManager.DB;
 using Models.BudgetManager.Stats;
 
 namespace BudgetManager
@@ -12,7 +14,9 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            Income income1 = new Income(1,  1500.0M, "Salary", new DateTime(2019, 5, 21));
+            IDatabase database = new File();
+            Income income1 = ;
+
             List list = new List(income1);
             Outcome outcome1 = new Outcome();
 

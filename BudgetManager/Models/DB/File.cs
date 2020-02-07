@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models.BudgetManager.DB;
 
-namespace Models.BudgetManager.DB
+namespace BudgetManager.Models.DB
 {
     class File : IDatabase
     {
