@@ -9,7 +9,8 @@ namespace BudgetManager.Models.DB
 {
     interface IDatabase
     {
+        void Write(Transaction transaction);
         
-        
+
     }
 }
