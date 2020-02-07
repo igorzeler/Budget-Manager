@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BudgetManager.BL;
-using BudgetManager.Stats;
+using Models.BudgetManager.BL;
+using Models.BudgetManager.Stats;
 
 namespace BudgetManager
 {

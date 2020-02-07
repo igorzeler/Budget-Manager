@@ -46,6 +46,7 @@
     <Compile Include="Models\BL\Transaction.cs" />
     <Compile Include="Models\DB\File.cs" />
     <Compile Include="Models\BL\Income.cs" />
+    <Compile Include="Models\DB\IDatabase.cs" />
     <Compile Include="Models\Stats\List.cs" />
     <Compile Include="Models\BL\Outcome.cs" />
     <Compile Include="Program.cs" />
