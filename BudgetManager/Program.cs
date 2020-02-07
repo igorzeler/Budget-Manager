@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models.DB;
-using Models.BudgetManager.BL;
-using Models.BudgetManager.DB;
-using Models.BudgetManager.Stats;
+using BudgetManager.Models.BL;
+using BudgetManager.Models.Stats;
 
 namespace BudgetManager
 {
