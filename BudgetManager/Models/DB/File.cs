@@ -8,7 +8,7 @@ using BudgetManager.Models.BL;
 
 namespace BudgetManager.Models.DB
 {
-    class File : IReader, IWriter
+    class File : IDatabase
     {
         public Transaction Read()
         {
