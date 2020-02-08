@@ -14,6 +14,6 @@ namespace BudgetManager.Models.BL
             Amount = amount;
             Name = name;
             Date = date;
-        }
+        }       
     }
 }
