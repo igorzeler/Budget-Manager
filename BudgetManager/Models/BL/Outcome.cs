@@ -10,6 +10,10 @@ namespace BudgetManager.Models.BL
     {
         public Outcome(int id, decimal amount, string name, DateTime date)
         {
+            Id = id;
+            Amount = amount;
+            Name = name;
+            Date = date;
         }
 
     }
