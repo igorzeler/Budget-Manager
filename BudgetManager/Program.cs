@@ -14,10 +14,12 @@ namespace BudgetManager
         static void Main(string[] args)
         {
             IDatabase database = new File();
+            
             Transaction income1 = database.Read();
-
             List list = new List(income1);
-            Outcome outcome1 = new Outcome();
+            
+            Transaction outcome1 = database.Read();
+            List list2 = new List(outcome1);
 
             list.DisplayLane();
             
