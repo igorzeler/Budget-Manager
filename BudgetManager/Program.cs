@@ -13,7 +13,7 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            IDatabase database = new File();
+            File database = new File();
             
             Transaction income1 = database.Read();
             List list = new List(income1);
