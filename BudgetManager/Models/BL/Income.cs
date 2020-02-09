@@ -14,6 +14,7 @@ namespace BudgetManager.Models.BL
             Amount = amount;
             Name = name;
             Date = date;
+            Type = TransactionType.Income;
         }       
     }
 }

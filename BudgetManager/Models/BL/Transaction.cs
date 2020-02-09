@@ -12,5 +12,7 @@ namespace BudgetManager.Models.BL
         public string Name { get; protected set; }
         public decimal Amount { get; protected set; }
         public DateTime Date { get; protected set; }
+        public enum TransactionType { Income, Outcome };
+        public TransactionType Type { get; protected set; }
     }
 }
