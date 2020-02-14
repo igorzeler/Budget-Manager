@@ -13,11 +13,11 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            string selected;
-
+            string selected="";
             do
             {
                 DisplayMenu();
+                selected = Console.ReadLine();
             }
             while (true);
         }
