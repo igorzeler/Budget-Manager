@@ -17,8 +17,9 @@ namespace BudgetManager
 
             do
             {
-
-            } while (true);
+                DisplayMenu();
+            }
+            while (true);
         }
         private static void DisplayMenu()
         {
