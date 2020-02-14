@@ -23,6 +23,12 @@ namespace BudgetManager
         private static void DisplayMenu()
         {
             Console.Clear();
+            Console.WriteLine("1 - Transaction list");
+            Console.WriteLine("2 - Monthly summary");
+            Console.WriteLine("3 - Add outcome");
+            Console.WriteLine("4 - Add income");
+            Console.WriteLine("5 - Remove transaction");
+            Console.WriteLine("6 - Exit");
         }
     }
 }
