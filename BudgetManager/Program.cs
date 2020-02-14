@@ -22,7 +22,7 @@ namespace BudgetManager
         }
         private static void DisplayMenu()
         {
-
+            Console.Clear();
         }
     }
 }
