@@ -29,6 +29,7 @@ namespace BudgetManager
             Console.WriteLine("4 - Add income");
             Console.WriteLine("5 - Remove transaction");
             Console.WriteLine("6 - Exit");
+            Console.WriteLine("Chosen action: ");
         }
     }
 }
