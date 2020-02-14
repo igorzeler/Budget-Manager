@@ -18,6 +18,7 @@ namespace BudgetManager
             {
                 DisplayMenu();
                 selected = Console.ReadLine();
+                RunSelected(selected);
             }
             while (true);
         }
