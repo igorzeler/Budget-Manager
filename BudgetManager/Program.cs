@@ -20,5 +20,9 @@ namespace BudgetManager
 
             } while (true);
         }
+        private static void DisplayMenu()
+        {
+
+        }
     }
 }
