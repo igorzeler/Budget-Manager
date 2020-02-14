@@ -20,7 +20,7 @@ namespace BudgetManager
                 selected = Console.ReadLine();
                 RunSelected(selected);
             }
-            while (true);
+            while (selected != "6");
         }
         private static void DisplayMenu()
         {
