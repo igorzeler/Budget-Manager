@@ -32,5 +32,9 @@ namespace BudgetManager
             Console.WriteLine("6 - Exit");
             Console.WriteLine("Chosen action: ");
         }
+        private static void RunSelected(string selected)
+        {
+
+        }
     }
 }
