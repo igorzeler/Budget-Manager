@@ -13,6 +13,8 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
+            string selected;
+
             do
             {
 
