@@ -13,18 +13,10 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            File database = new File();
-            
-            Transaction income1 = database.Read();
-            List list = new List(income1);
-            
-            Transaction outcome1 = database.Read();
-            List list2 = new List(outcome1);
+            do
+            {
 
-            list.DisplayLane();
-            list2.DisplayLane();
-
-            Console.ReadKey();
+            } while (true);
         }
     }
 }
