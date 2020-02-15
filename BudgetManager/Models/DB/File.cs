@@ -10,11 +10,7 @@ namespace BudgetManager.Models.DB
 {
     class File : IReader, IWriter
     {
-        public Transaction Read()
-        {
-            return new Income(1, 1500.0M, "Salary", new DateTime(2019, 5, 21));
-        }
-
+        
         public void Write(Transaction transaction)
         {
         }
