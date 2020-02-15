@@ -14,5 +14,10 @@ namespace BudgetManager.Models.DB
         public void Write(Transaction transaction)
         {
         }
+
+        public void Remove(int id)
+        {
+
+        }
     }
 }
