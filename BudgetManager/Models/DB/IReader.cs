@@ -9,6 +9,6 @@ namespace BudgetManager.Models.DB
 {
     interface IReader
     {
-        Transaction Read();
+        Transaction ReadAll();
     }
 }
