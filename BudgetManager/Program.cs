@@ -78,7 +78,5 @@ namespace BudgetManager
         {
             Console.Clear();
         }
-
-
     }
 }
