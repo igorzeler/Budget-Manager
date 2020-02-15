@@ -13,7 +13,7 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            string selected="";
+            var selected="";
             do
             {
                 DisplayMenu();
