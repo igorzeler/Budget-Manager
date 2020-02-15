@@ -19,5 +19,10 @@ namespace BudgetManager.Models.DB
         {
 
         }
+
+        public IEnumerable<Transaction> ReadAll()
+        {
+
+        }
     }
 }
