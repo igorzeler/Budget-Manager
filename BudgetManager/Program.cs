@@ -13,7 +13,7 @@ namespace BudgetManager
     {
         static void Main(string[] args)
         {
-            var selected="";
+            var selected = "";
             do
             {
                 DisplayMenu();
@@ -52,5 +52,23 @@ namespace BudgetManager
 
             }
         }
+
+        private static void ShowList()
+        {
+        }
+        private static void ShowReport()
+        {
+        }
+        private static void AddOutcome()
+        {
+        }
+        private static void AddIncome()
+        {
+        }
+        private static void removeTransaction()
+        {
+        }
+
+
     }
 }
