@@ -24,5 +24,10 @@ namespace BudgetManager.Models.DB
         {
 
         }
+
+        public int GetNextId()
+        {
+
+        }
     }
 }
