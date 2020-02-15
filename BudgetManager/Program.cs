@@ -55,18 +55,23 @@ namespace BudgetManager
 
         private static void ShowList()
         {
+            Console.Clear();
         }
         private static void ShowReport()
         {
+            Console.Clear();
         }
         private static void AddOutcome()
         {
+            Console.Clear();
         }
         private static void AddIncome()
         {
+            Console.Clear();
         }
         private static void removeTransaction()
         {
+            Console.Clear();
         }
 
 
