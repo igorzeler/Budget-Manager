@@ -10,5 +10,6 @@ namespace BudgetManager.Models.DB
     interface IReader
     {
         IEnumerable<Transaction> ReadAll();
+        int GetNextId();
     }
 }
