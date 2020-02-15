@@ -74,7 +74,7 @@ namespace BudgetManager
         {
             Console.Clear();
         }
-        private static void removeTransaction()
+        private static void RemoveTransaction()
         {
             Console.Clear();
         }
