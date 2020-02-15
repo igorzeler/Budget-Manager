@@ -10,7 +10,7 @@ namespace BudgetManager.Models.DB
 {
     class File : IReader, IWriter
     {
-        private List<Transaction> _list;
+        private IList<Transaction> _list;
         
         public void Write(Transaction transaction)
         {
