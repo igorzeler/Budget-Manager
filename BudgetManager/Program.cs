@@ -38,14 +38,19 @@ namespace BudgetManager
             switch (selected)
             {
                 case "1":
+                    ShowList();
                     break;
                 case "2":
+                    ShowReport();
                     break;
                 case "3":
+                    AddOutcome();
                     break;
                 case "4":
+                    AddIncome();
                     break;
                 case "5":
+                    RemoveTransaction();
                     break;
                 default:
                     break;
