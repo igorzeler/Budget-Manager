@@ -10,13 +10,30 @@ namespace BudgetManager.Models.DB
 {
     class File : IReader, IWriter
     {
-        public Transaction Read()
+        public File()
         {
-            return new Income(1, 1500.0M, "Salary", new DateTime(2019, 5, 21));
+            _list = new List<Transaction>();
         }
 
+        private IList<Transaction> _list;
+        
         public void Write(Transaction transaction)
         {
+        }
+
+        public void Remove(int id)
+        {
+
+        }
+
+        public IEnumerable<Transaction> ReadAll()
+        {
+
+        }
+
+        public int GetNextId()
+        {
+
         }
     }
 }

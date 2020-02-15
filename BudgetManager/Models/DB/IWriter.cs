@@ -10,5 +10,6 @@ namespace BudgetManager.Models.DB
     interface IWriter
     {
         void Write(Transaction transaction);
+        void Remove(int id);
     }
 }
