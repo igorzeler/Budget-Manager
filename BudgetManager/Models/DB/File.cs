@@ -33,7 +33,10 @@ namespace BudgetManager.Models.DB
 
         public int GetNextId()
         {
-
+            if ( _list.Count == 0 )
+            {
+                return 1;
+            }
         }
     }
 }
