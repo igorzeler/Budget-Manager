@@ -17,5 +17,10 @@ namespace BudgetManager.Models
         {
 
         }
+
+        public void RemovebyId(int id)
+        {
+
+        }
     }
 }
