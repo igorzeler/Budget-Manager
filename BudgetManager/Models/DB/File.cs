@@ -28,7 +28,7 @@ namespace BudgetManager.Models.DB
 
         public IEnumerable<Transaction> ReadAll()
         {
-            return _list;
+
         }
 
         public int GetNextId()
