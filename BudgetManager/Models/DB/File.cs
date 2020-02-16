@@ -24,7 +24,7 @@ namespace BudgetManager.Models.DB
 
         public void Remove(int id)
         {
-
+            Transaction toRemove;
         }
 
         public IEnumerable<Transaction> ReadAll()
