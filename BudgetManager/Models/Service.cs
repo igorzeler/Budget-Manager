@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BudgetManager.Models.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,11 @@ namespace BudgetManager.Models
 {
     class Service
     {
+        public Service(IReader reader, IWriter writer)
+        {
+
+        }
+
         public void AddIncome(decimal amount, string name, DateTime date)
         {
 
