@@ -25,6 +25,14 @@ namespace BudgetManager.Models.DB
         public void Remove(int id)
         {
             Transaction toRemove;
+            foreach (Transaction transaction in _list)
+            {
+                if (transaction.Id == id)
+                {
+                    toRemove = transaction;
+                    break;
+                }
+            }
         }
 
         public IEnumerable<Transaction> ReadAll()
