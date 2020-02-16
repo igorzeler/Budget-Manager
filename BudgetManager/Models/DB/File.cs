@@ -38,6 +38,7 @@ namespace BudgetManager.Models.DB
             {
                 return 1;
             }
+            return _list[lastIndex].Id+1;
         }
     }
 }
