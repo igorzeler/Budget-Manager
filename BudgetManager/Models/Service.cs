@@ -27,9 +27,9 @@ namespace BudgetManager.Models
 
         }
 
-        public void RemovebyId(int id)
+        public void RemoveById(int id)
         {
-
+            _writer.Remove(id);
         }
     }
 }
