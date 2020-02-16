@@ -8,7 +8,7 @@ namespace BudgetManager.Models
 {
     class Service
     {
-        public void AddIncome()
+        public void AddIncome(decimal amount, string name, DateTime date)
         {
 
         }
