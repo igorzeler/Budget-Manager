@@ -24,7 +24,7 @@ namespace BudgetManager.Models.DB
 
         public void Remove(int id)
         {
-            Transaction toRemove;
+            Transaction toRemove = null;
             foreach (Transaction transaction in _list)
             {
                 if (transaction.Id == id)
