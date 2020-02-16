@@ -33,6 +33,7 @@ namespace BudgetManager.Models.DB
                     break;
                 }
             }
+            _list.Remove(toRemove);
         }
 
         public IEnumerable<Transaction> ReadAll()
