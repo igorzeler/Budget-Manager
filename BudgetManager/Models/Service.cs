@@ -13,7 +13,8 @@ namespace BudgetManager.Models
         private IWriter _writer;
         public Service(IReader reader, IWriter writer)
         {
-
+            _reader = reader;
+            _writer = writer;
         }
 
         public void AddIncome(decimal amount, string name, DateTime date)
