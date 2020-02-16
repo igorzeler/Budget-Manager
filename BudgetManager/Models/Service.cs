@@ -12,5 +12,10 @@ namespace BudgetManager.Models
         {
 
         }
+
+        public void AddOutcome(decimal amount, string name, DateTime date)
+        {
+
+        }
     }
 }
