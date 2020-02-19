@@ -83,6 +83,7 @@ namespace BudgetManager
             var name = Console.ReadLine();
 
             Console.WriteLine("Amount: ");
+            var value = Console.ReadLine();
 
         }
         private static void RemoveTransaction()
