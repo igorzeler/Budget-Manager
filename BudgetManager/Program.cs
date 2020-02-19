@@ -79,6 +79,7 @@ namespace BudgetManager
         private static void RemoveTransaction()
         {
             Console.Clear();
+            Console.WriteLine("Podaj ID do usunięcia: ");
         }
     }
 }
