@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetManager.Models;
 using BudgetManager.Models.DB;
 using BudgetManager.Models.BL;
 using BudgetManager.Models.Stats;
@@ -11,8 +12,10 @@ namespace BudgetManager
 {
     class Program
     {
+        private static File _file;
         static void Main(string[] args)
         {
+            _file = new File();
             var selected = "";
             do
             {
@@ -77,6 +80,12 @@ namespace BudgetManager
         private static void RemoveTransaction()
         {
             Console.Clear();
+            Console.WriteLine("Input ID to remove: ");
+            var selectedId = Console.ReadLine();
+            var id = int.Parse(selectedId);
+
+            Service service = new Service(_file, _file);
+            service.RemoveById(id);
         }
     }
 }
