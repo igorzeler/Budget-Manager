@@ -24,7 +24,7 @@ namespace BudgetManager.Models
 
         public void AddOutcome(decimal amount, string name, DateTime date)
         {
-
+            int id = _reader.GetNextId();
         }
 
         public void RemoveById(int id)
