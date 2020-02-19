@@ -14,6 +14,7 @@ namespace BudgetManager
         private static File _file;
         static void Main(string[] args)
         {
+            _file = new File();
             var selected = "";
             do
             {
