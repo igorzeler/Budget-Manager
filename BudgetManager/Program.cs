@@ -81,6 +81,7 @@ namespace BudgetManager
             Console.Clear();
             Console.WriteLine("Podaj ID do usunięcia: ");
             var selectedId = Console.ReadLine();
+            var id = int.Parse(selectedId);
         }
     }
 }
