@@ -80,6 +80,10 @@ namespace BudgetManager
             Console.WriteLine("New income");
 
             Console.WriteLine("Name: ");
+            var name = Console.ReadLine();
+
+            
+
         }
         private static void RemoveTransaction()
         {
