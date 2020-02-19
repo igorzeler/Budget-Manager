@@ -85,6 +85,7 @@ namespace BudgetManager
             var id = int.Parse(selectedId);
 
             Service service = new Service(_file, _file);
+            service.RemoveById(id);
         }
     }
 }
