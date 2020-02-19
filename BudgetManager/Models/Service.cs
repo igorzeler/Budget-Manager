@@ -19,7 +19,7 @@ namespace BudgetManager.Models
 
         public void AddIncome(decimal amount, string name, DateTime date)
         {
-
+            int id = _reader.GetNextId();
         }
 
         public void AddOutcome(decimal amount, string name, DateTime date)
