@@ -32,6 +32,8 @@ namespace BudgetManager.Models
             int id = _reader.GetNextId();
 
             Outcome outcome = new Outcome(id, amount, name, date);
+
+            _writer.Write(outcome);
         }
 
         public void RemoveById(int id)
