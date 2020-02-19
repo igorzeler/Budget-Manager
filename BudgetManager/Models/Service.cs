@@ -1,4 +1,5 @@
-﻿using BudgetManager.Models.DB;
+﻿using BudgetManager.Models.BL;
+using BudgetManager.Models.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,8 @@ namespace BudgetManager.Models
         public void AddIncome(decimal amount, string name, DateTime date)
         {
             int id = _reader.GetNextId();
+
+            Income income = new Income(id, amount, name, date);
         }
 
         public void AddOutcome(decimal amount, string name, DateTime date)
