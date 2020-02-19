@@ -11,6 +11,7 @@ namespace BudgetManager
 {
     class Program
     {
+        private static File _file;
         static void Main(string[] args)
         {
             var selected = "";
