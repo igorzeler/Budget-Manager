@@ -80,7 +80,7 @@ namespace BudgetManager
         private static void RemoveTransaction()
         {
             Console.Clear();
-            Console.WriteLine("Podaj ID do usunięcia: ");
+            Console.WriteLine("Input ID to remove: ");
             var selectedId = Console.ReadLine();
             var id = int.Parse(selectedId);
 
