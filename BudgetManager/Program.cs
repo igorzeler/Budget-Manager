@@ -91,7 +91,7 @@ namespace BudgetManager
             DateTime date = DateTime.Parse(value);
 
             Service service = new Service(_file, _file);
-            service.AddOutcome(amount, name, date);
+            service.AddIncome(amount, name, date);
         }
         private static void RemoveTransaction()
         {
