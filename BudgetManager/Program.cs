@@ -89,6 +89,8 @@ namespace BudgetManager
             Console.WriteLine("Date: ");
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
+
+            Service service = new Service(_file, _file);
         }
         private static void RemoveTransaction()
         {
