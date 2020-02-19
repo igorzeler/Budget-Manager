@@ -84,8 +84,9 @@ namespace BudgetManager
 
             Console.WriteLine("Amount: ");
             var value = Console.ReadLine();
-
             var amount = decimal.Parse(value);
+
+            Console.WriteLine("Date: ");
 
         }
         private static void RemoveTransaction()
