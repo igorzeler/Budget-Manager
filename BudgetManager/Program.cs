@@ -76,6 +76,10 @@ namespace BudgetManager
         private static void AddIncome()
         {
             Console.Clear();
+
+            Console.WriteLine("New income");
+
+            Console.WriteLine("Name: ");
         }
         private static void RemoveTransaction()
         {
