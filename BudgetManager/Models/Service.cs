@@ -23,6 +23,8 @@ namespace BudgetManager.Models
             int id = _reader.GetNextId();
 
             Income income = new Income(id, amount, name, date);
+
+            _writer.Write(income);
         }
 
         public void AddOutcome(decimal amount, string name, DateTime date)
