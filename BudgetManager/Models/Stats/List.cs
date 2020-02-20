@@ -25,6 +25,11 @@ namespace BudgetManager.Models.Stats
         public void DisplayList()
         {
             IEnumerable<Transaction> list = _reader.ReadAll();
+
+            foreach (Transaction  transaction in list)
+            {
+                DisplayLane(transaction);
+            }
         }
     }
 }
