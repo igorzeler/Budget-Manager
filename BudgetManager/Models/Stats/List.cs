@@ -12,7 +12,7 @@ namespace BudgetManager.Models.Stats
     {
         private IReader _reader;
 
-        public List(IReader reader)
+        public List(Transaction transaction)
         {
             _transaction = transaction;
         }
