@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models.BL;
+using BudgetManager.Models.DB;
 
 namespace BudgetManager.Models.Stats
 {
     class List
     {
-        private Transaction _transaction;
+        private IReader _reader;
 
         public List(Transaction transaction)
         {
