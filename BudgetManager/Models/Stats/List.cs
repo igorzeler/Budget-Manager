@@ -9,7 +9,7 @@ namespace BudgetManager.Models.Stats
 {
     class List
     {
-        private Transaction _transaction;
+        
 
         public List(Transaction transaction)
         {
