@@ -17,7 +17,7 @@ namespace BudgetManager.Models.Stats
             _reader = reader;
         }
 
-        public void DisplayLane(Transaction transaction)
+        private void DisplayLane(Transaction transaction)
         {
             Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
