@@ -21,5 +21,10 @@ namespace BudgetManager.Models.Stats
         {
             Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
+
+        public void DisplayList()
+        {
+
+        }
     }
 }
