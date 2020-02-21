@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models.BL;
+using BudgetManager.Models.DB;
 
 namespace BudgetManager.Models.Stats
 {
@@ -11,14 +12,24 @@ namespace BudgetManager.Models.Stats
     {
         
 
-        public List(Transaction transaction)
+        public List(IReader reader)
         {
-            _transaction = transaction;
+            _reader = reader;
         }
 
-        public void DisplayLane()
+        private void DisplayLane(Transaction transaction)
         {
-            Console.WriteLine($"{_transaction.Id} {_transaction.Name} {_transaction.Amount}zł {_transaction.Date.ToShortDateString()}");
+            Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
+        }
+
+        public void DisplayList()
+        {
+            IEnumerable<Transaction> list = _reader.ReadAll();
+
+            foreach (Transaction  transaction in list)
+            {
+                DisplayLane(transaction);
+            }
         }
     }
 }
