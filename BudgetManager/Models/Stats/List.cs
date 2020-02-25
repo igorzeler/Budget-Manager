@@ -19,7 +19,7 @@ namespace BudgetManager.Models.Stats
 
         private void DisplayLine(Transaction transaction)
         {
-            string type;
+            string type= "";
 
             switch (transaction.Type)
             {
