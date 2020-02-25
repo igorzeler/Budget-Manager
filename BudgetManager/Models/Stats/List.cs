@@ -17,7 +17,7 @@ namespace BudgetManager.Models.Stats
             _reader = reader;
         }
 
-        private void DisplayLane(Transaction transaction)
+        private void DisplayLine(Transaction transaction)
         {
             Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
@@ -28,7 +28,7 @@ namespace BudgetManager.Models.Stats
 
             foreach (Transaction  transaction in list)
             {
-                DisplayLane(transaction);
+                DisplayLine(transaction);
             }
         }
     }
