@@ -64,6 +64,7 @@ namespace BudgetManager
         private static void ShowList()
         {
             Console.Clear();
+            Console.WriteLine("Display transactions");
 
             List list = new List(_file);
 
