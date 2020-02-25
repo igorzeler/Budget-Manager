@@ -21,6 +21,16 @@ namespace BudgetManager.Models.Stats
         {
             string type;
 
+            switch (transaction.Type)
+            {
+                case Transaction.TransactionType.Income:
+                    type = "INCOME";
+                    break;
+                case Transaction.TransactionType.Outcome:
+                    type = "OUTCOME";
+                    break;
+            }
+
             Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
 
