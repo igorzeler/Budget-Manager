@@ -10,7 +10,7 @@ namespace BudgetManager.Models.Stats
 {
     class List
     {
-        
+        private IReader _reader;
 
         public List(IReader reader)
         {
