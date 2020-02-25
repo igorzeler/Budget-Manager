@@ -31,7 +31,7 @@ namespace BudgetManager.Models.Stats
                     break;
             }
 
-            Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
+            Console.WriteLine($"{transaction.Id} {transaction.Name} {type} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
 
         public void DisplayList()
