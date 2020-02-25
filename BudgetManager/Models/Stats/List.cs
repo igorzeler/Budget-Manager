@@ -17,9 +17,21 @@ namespace BudgetManager.Models.Stats
             _reader = reader;
         }
 
-        private void DisplayLane(Transaction transaction)
+        private void DisplayLine(Transaction transaction)
         {
-            Console.WriteLine($"{transaction.Id} {transaction.Name} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
+            string type= "";
+
+            switch (transaction.Type)
+            {
+                case Transaction.TransactionType.Income:
+                    type = "INCOME";
+                    break;
+                case Transaction.TransactionType.Outcome:
+                    type = "OUTCOME";
+                    break;
+            }
+
+            Console.WriteLine($"{transaction.Id} {transaction.Name} {type} {transaction.Amount}zł {transaction.Date.ToShortDateString()}");
         }
 
         public void DisplayList()
@@ -28,7 +40,7 @@ namespace BudgetManager.Models.Stats
 
             foreach (Transaction  transaction in list)
             {
-                DisplayLane(transaction);
+                DisplayLine(transaction);
             }
         }
     }
