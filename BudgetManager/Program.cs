@@ -68,6 +68,7 @@ namespace BudgetManager
             List list = new List(_file);
 
             list.DisplayList();
+            Console.ReadKey();
         }
         private static void ShowReport()
         {
