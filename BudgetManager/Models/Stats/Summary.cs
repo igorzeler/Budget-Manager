@@ -19,17 +19,16 @@ namespace BudgetManager.Models.Stats
 
         public void DisplayReport(int year, int month)
         {
-            IEnumerable<Transaction> list = _reader.ReadAll();
+            IEnumerable<Transaction> list = GetTransactions(year, month);
 
-            List<Transaction> repoList = new List<Transaction>();
+            decimal incomes = SumIncomes(list);
+            decimal outcomes = SumOutcomes(list);
+            decimal balance = Balance(incomes, outcomes);
 
-            foreach (var transaction in list)
-            {
-                if (transaction.Date.Year ==year && transaction.Date.Month == month)
-                {
-                    repoList.Add(transaction);
-                }
-            }
+            Console.WriteLine($"Monthly summary {month}/{year}");
+            Console.WriteLine($"Sum of incomes: {incomes}£");
+            Console.WriteLine($"Sum of outcomes: {outcomes}£");
+            Console.WriteLine($"Monthly balance : {balance}£");
         }
 
         private decimal SumIncomes(IEnumerable<Transaction> list)
@@ -57,6 +56,23 @@ namespace BudgetManager.Models.Stats
                 }
             }
             return sum;
+        }
+
+        private IEnumerable<Transaction> GetTransactions(int year, int month)
+        {
+            IEnumerable<Transaction> list = _reader.ReadAll();
+
+            List<Transaction> reportList = new List<Transaction>();
+
+            foreach (var transaction in list)
+            {
+                if (transaction.Date.Year == year && transaction.Date.Month == month)
+                {
+                    reportList.Add(transaction);
+                }
+            }
+
+            return reportList;
         }
 
         private decimal Balance(decimal incomes, decimal outcomes) => incomes - outcomes;
