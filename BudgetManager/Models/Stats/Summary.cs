@@ -46,7 +46,15 @@ namespace BudgetManager.Models.Stats
         }
         private decimal SumOutcomes(IEnumerable<Transaction> list)
         {
+            decimal sum = 0.0M;
 
+            foreach (Transaction transaction in list)
+            {
+                if (transaction.Type == Transaction.TransactionType.Outcome)
+                {
+                    sum += transaction.Amount;
+                }
+            }
         }
 
     }
