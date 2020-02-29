@@ -22,6 +22,14 @@ namespace BudgetManager.Models.Stats
             IEnumerable<Transaction> list = _reader.ReadAll();
 
             List<Transaction> repoList = new List<Transaction>();
+
+            foreach (var transaction in list)
+            {
+                if (transaction.Date.Year ==year && transaction.Date.Month == month)
+                {
+                    repoList.Add(transaction);
+                }
+            }
         }
     }
 }
