@@ -43,6 +43,7 @@ namespace BudgetManager.Models.Stats
                     sum += transaction.Amount;
                 }
             }
+            return sum;
         }
         private decimal SumOutcomes(IEnumerable<Transaction> list)
         {
@@ -55,6 +56,7 @@ namespace BudgetManager.Models.Stats
                     sum += transaction.Amount;
                 }
             }
+            return sum;
         }
 
     }
