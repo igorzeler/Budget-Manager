@@ -15,5 +15,10 @@ namespace BudgetManager.Models.Stats
         {
             _reader = reader;
         }
+
+        public void DisplayReport(int year, int month)
+        {
+
+        }
     }
 }
