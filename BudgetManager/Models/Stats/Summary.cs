@@ -36,5 +36,10 @@ namespace BudgetManager.Models.Stats
         {
 
         }
+        private decimal SumOutcomes(IEnumerable<Transaction> list)
+        {
+
+        }
+
     }
 }
