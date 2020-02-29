@@ -31,5 +31,10 @@ namespace BudgetManager.Models.Stats
                 }
             }
         }
+
+        private decimal SumIncomes(IEnumerable<Transaction> list)
+        {
+
+        }
     }
 }
