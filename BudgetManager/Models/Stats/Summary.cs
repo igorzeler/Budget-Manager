@@ -34,7 +34,7 @@ namespace BudgetManager.Models.Stats
 
         private decimal SumIncomes(IEnumerable<Transaction> list)
         {
-
+            decimal sum = 0.0M;
         }
         private decimal SumOutcomes(IEnumerable<Transaction> list)
         {
