@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetManager.Models.BL;
 using BudgetManager.Models.DB;
 
 namespace BudgetManager.Models.Stats
@@ -18,7 +19,7 @@ namespace BudgetManager.Models.Stats
 
         public void DisplayReport(int year, int month)
         {
-
+            IEnumerable<Transaction> list = _reader.ReadAll();
         }
     }
 }
