@@ -59,5 +59,9 @@ namespace BudgetManager.Models.Stats
             return sum;
         }
 
+        private decimal Balance(decimal incomes, decimal outcomes)
+        {
+
+        }
     }
 }
