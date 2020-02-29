@@ -20,6 +20,8 @@ namespace BudgetManager.Models.Stats
         public void DisplayReport(int year, int month)
         {
             IEnumerable<Transaction> list = _reader.ReadAll();
+
+            List<Transaction> repoList = new List<Transaction>();
         }
     }
 }
