@@ -57,7 +57,6 @@ namespace BudgetManager
                     break;
                 default:
                     break;
-
             }
         }
 
