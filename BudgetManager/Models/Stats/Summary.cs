@@ -33,46 +33,18 @@ namespace BudgetManager.Models.Stats
 
         private decimal SumIncomes(IEnumerable<Transaction> list)
         {
-            decimal sum = 0.0M;
-
-            foreach (Transaction transaction in list)
-            {
-                if (transaction.Type == Transaction.TransactionType.Income)
-                {
-                    sum += transaction.Amount;
-                }
-            }
-            return sum;
+            return list.Where(t => t.Type == Transaction.TransactionType.Income).Sum(t => t.Amount);
         }
         private decimal SumOutcomes(IEnumerable<Transaction> list)
         {
-            decimal sum = 0.0M;
-
-            foreach (Transaction transaction in list)
-            {
-                if (transaction.Type == Transaction.TransactionType.Outcome)
-                {
-                    sum += transaction.Amount;
-                }
-            }
-            return sum;
+            return list.Where(t => t.Type == Transaction.TransactionType.Outcome).Sum(t => t.Amount);
         }
 
         private IEnumerable<Transaction> GetTransactions(int year, int month)
         {
             IEnumerable<Transaction> list = _reader.ReadAll();
 
-            List<Transaction> reportList = new List<Transaction>();
-
-            foreach (var transaction in list)
-            {
-                if (transaction.Date.Year == year && transaction.Date.Month == month)
-                {
-                    reportList.Add(transaction);
-                }
-            }
-
-            return reportList;
+            return list.Where(t => t.Date.Year == year && t.Date.Month == month).ToList();
         }
 
         private decimal Balance(decimal incomes, decimal outcomes) => incomes - outcomes;
