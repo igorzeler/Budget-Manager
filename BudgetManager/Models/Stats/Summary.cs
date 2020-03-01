@@ -10,7 +10,7 @@ namespace BudgetManager.Models.Stats
 {
     class Summary
     {
-        private IReader _reader;
+        private readonly IReader _reader;
 
         public Summary(IReader reader)
         {
