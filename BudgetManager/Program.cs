@@ -78,7 +78,9 @@ namespace BudgetManager
             int year = DateTime.Now.Year;
             int month = DateTime.Now.Month;
 
-            Summary summary = new Summary(_file);
+            Summary report = new Summary(_file);
+
+            report.DisplayReport(year, month);
         }
         private static void AddOutcome()
         {
