@@ -81,6 +81,7 @@ namespace BudgetManager
             Summary report = new Summary(_file);
 
             report.DisplayReport(year, month);
+            Console.ReadKey();
         }
         private static void AddOutcome()
         {
