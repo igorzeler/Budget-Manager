@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models;
-using BudgetManager.Models.DB;
+using BudgetManager.Models.DB.Files;
 using BudgetManager.Models.BL;
+using BudgetManager.Models.DB;
 using BudgetManager.Models.Stats;
 
 namespace BudgetManager
@@ -13,9 +14,11 @@ namespace BudgetManager
     class Program
     {
         private static File _file;
+        private static IWriter _writer;
         static void Main(string[] args)
         {
             _file = new File();
+            _writer = new Writer("db.txt");
             var selected = "";
             do
             {
@@ -99,7 +102,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.AddOutcome(amount, name, date);
         }
         private static void AddIncome()
@@ -119,7 +122,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.AddIncome(amount, name, date);
         }
         private static void RemoveTransaction()
@@ -129,7 +132,7 @@ namespace BudgetManager
             var selectedId = Console.ReadLine();
             var id = int.Parse(selectedId);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.RemoveById(id);
         }
     }
