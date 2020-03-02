@@ -11,12 +11,27 @@ namespace BudgetManager.Models.DB
     {
         public void Remove(int id)
         {
-            throw new NotImplementedException();
         }
 
         public void Write(Transaction transaction)
         {
-            throw new NotImplementedException();
+        }
+
+        private string TransactionToText(Transaction transaction)
+        {
+            string type = "I";
+            if (transaction.Type == Transaction.TransactionType.Outcome )
+            {
+                type = "O"; //letter 'O'
+            }
+
+            const string pattern = "dd-MM-yyyy";
+            var line = string.Format($"{transaction.Id};" +
+                                        $"{transaction.Name};" +
+                                        $"{type};" +
+                                        $"{transaction.Amount};" +
+                                        $"{transaction.Date.ToString(pattern)}");
+            return line;
         }
     }
 }
