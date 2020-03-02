@@ -22,6 +22,8 @@ namespace BudgetManager.Models.DB
 
         public void Write(Transaction transaction)
         {
+            string line = TransactionToText(transaction);
+            File.AppendAllText(_fileName, line);
         }
 
         private string TransactionToText(Transaction transaction)
