@@ -1,6 +1,7 @@
 ﻿using BudgetManager.Models.BL;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,9 @@ namespace BudgetManager.Models.DB
 
         private string TransactionToText(Transaction transaction)
         {
+            string newLine = Environment.NewLine;
             string type = "I";
+
             if (transaction.Type == Transaction.TransactionType.Outcome )
             {
                 type = "O"; //letter 'O'
@@ -31,7 +34,7 @@ namespace BudgetManager.Models.DB
                                         $"{type};" +
                                         $"{transaction.Amount};" +
                                         $"{transaction.Date.ToString(pattern)}");
-            return line;
+            return line + newLine;
         }
     }
 }
