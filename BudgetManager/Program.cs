@@ -13,11 +13,11 @@ namespace BudgetManager
 {
     class Program
     {
-        private static File _file;
         private static IWriter _writer;
+        private static IReader _reader;
         static void Main(string[] args)
         {
-            _file = new File();
+            _reader = new Reader("db.txt");
             _writer = new Writer("db.txt");
             var selected = "";
             do
