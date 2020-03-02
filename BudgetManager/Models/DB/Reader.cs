@@ -25,6 +25,16 @@ namespace BudgetManager.Models.DB
         public IEnumerable<Transaction> ReadAll()
         {
             IEnumerable<string> lines = File.ReadAllLines(_fileName);
+            IList<Transaction> transactions = new List<Transaction>();
+
+            foreach (var line in lines)
+            {
+                Transaction transaction = TextToTransaction(line);
+
+                transactions.Add(transaction);
+            }
+
+            return transactions;
         }
 
         private Transaction TextToTransaction(string line)
