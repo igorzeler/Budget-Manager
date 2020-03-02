@@ -24,8 +24,14 @@ namespace BudgetManager.Models.DB
 
         public IEnumerable<Transaction> ReadAll()
         {
-            IEnumerable<string> lines = File.ReadAllLines(_fileName);
             IList<Transaction> transactions = new List<Transaction>();
+
+            if (!File.Exists(_fileName))
+            {
+                return transactions;
+            }
+
+            IEnumerable<string> lines = File.ReadAllLines(_fileName);
 
             foreach (var line in lines)
             {
