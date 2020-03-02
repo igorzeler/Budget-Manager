@@ -27,9 +27,25 @@ namespace BudgetManager.Models.DB
             IEnumerable<string> lines = File.ReadAllLines(_fileName);
         }
 
-        private Transaction TextToTransaction()
+        private Transaction TextToTransaction(string line)
         {
+            const string pattern = "dd-MM-yyyy";
+            string[] columns = line.Split(';');
 
+            var id = int.Parse(columns[0]);
+            var name = columns[1];
+            var type = columns[2];
+            var amount = decimal.Parse(columns[3]);
+            DateTime date = DateTime.ParseExact(columns[4], pattern, null);
+
+            if (type == "I")
+            {
+                return new Income(id, amount, name, date);
+            }
+            else
+            {
+                return new Outcome(id, amount, name, date);
+            }
         }
     }
 }
