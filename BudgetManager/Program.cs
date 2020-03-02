@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models;
-using BudgetManager.Models.DB;
+using BudgetManager.Models.DB.Files;
 using BudgetManager.Models.BL;
 using BudgetManager.Models.Stats;
 
