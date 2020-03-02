@@ -19,7 +19,14 @@ namespace BudgetManager.Models.DB
 
         public int GetNextId()
         {
-            throw new NotImplementedException();
+            IEnumerable<Transaction> transactions = ReadAll();
+            var list = transactions.ToList();
+            int lastIndex = list.Count() - 1;
+            if (!list.Any())
+            {
+                return 1;
+            }
+            return list.ElementAt(lastIndex).Id + 1;
         }
 
         public IEnumerable<Transaction> ReadAll()
