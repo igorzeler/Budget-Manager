@@ -18,6 +18,12 @@ namespace BudgetManager.Models.DB
         }
         public void Remove(int id)
         {
+            IEnumerable<string> lines = File.ReadAllLines(_fileName);
+            IList<string> toSave = new List<string>();
+
+            foreach (var line in lines)
+            {
+            }
         }
 
         public void Write(Transaction transaction)
