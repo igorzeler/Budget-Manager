@@ -10,6 +10,12 @@ namespace BudgetManager.Models.DB
 {
     class Writer : IWriter
     {
+        private string _fileName;
+
+        public Writer(string fileName)
+        {
+            _fileName = fileName;
+        }
         public void Remove(int id)
         {
         }
