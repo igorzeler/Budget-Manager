@@ -50,5 +50,12 @@ namespace BudgetManager.Models.DB
                                         $"{transaction.Date.ToString(pattern)}");
             return line + newLine;
         }
+
+        private bool HaveId(int id, string line)
+        {
+            string[] columns = line.Split(';');
+            var lineId = int.Parse(columns[0]);
+            return id == lineId;
+        }
     }
 }
