@@ -23,7 +23,13 @@ namespace BudgetManager.Models.DB
 
             foreach (var line in lines)
             {
+
+                if (!HaveId(id, line))
+                {
+                    toSave.Add(line);
+                }
             }
+            File.WriteAllLines(_fileName, toSave);
         }
 
         public void Write(Transaction transaction)
