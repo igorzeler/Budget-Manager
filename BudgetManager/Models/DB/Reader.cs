@@ -1,6 +1,7 @@
 ﻿using BudgetManager.Models.BL;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace BudgetManager.Models.DB
 
         public IEnumerable<Transaction> ReadAll()
         {
-            throw new NotImplementedException();
+            IEnumerable<string> lines = File.ReadAllLines(_fileName);
         }
     }
 }
