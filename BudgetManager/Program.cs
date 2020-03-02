@@ -57,7 +57,6 @@ namespace BudgetManager
                     break;
                 default:
                     break;
-
             }
         }
 
@@ -74,6 +73,14 @@ namespace BudgetManager
         private static void ShowReport()
         {
             Console.Clear();
+
+            int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
+
+            Summary report = new Summary(_file);
+
+            report.DisplayReport(year, month);
+            Console.ReadKey();
         }
         private static void AddOutcome()
         {
