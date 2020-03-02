@@ -26,5 +26,10 @@ namespace BudgetManager.Models.DB
         {
             IEnumerable<string> lines = File.ReadAllLines(_fileName);
         }
+
+        private Transaction TextToTransaction()
+        {
+
+        }
     }
 }
