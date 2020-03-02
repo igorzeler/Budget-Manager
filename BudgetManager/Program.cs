@@ -102,7 +102,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.AddOutcome(amount, name, date);
         }
         private static void AddIncome()
@@ -122,7 +122,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.AddIncome(amount, name, date);
         }
         private static void RemoveTransaction()
@@ -132,7 +132,7 @@ namespace BudgetManager
             var selectedId = Console.ReadLine();
             var id = int.Parse(selectedId);
 
-            Service service = new Service(_file, _file);
+            Service service = new Service(_file, _writer);
             service.RemoveById(id);
         }
     }
