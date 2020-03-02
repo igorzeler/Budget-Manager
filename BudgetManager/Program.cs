@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BudgetManager.Models;
 using BudgetManager.Models.DB.Files;
 using BudgetManager.Models.BL;
+using BudgetManager.Models.DB;
 using BudgetManager.Models.Stats;
 
 namespace BudgetManager
@@ -13,9 +14,11 @@ namespace BudgetManager
     class Program
     {
         private static File _file;
+        private static IWriter _writer;
         static void Main(string[] args)
         {
             _file = new File();
+            _writer = new Writer("db.txt");
             var selected = "";
             do
             {
