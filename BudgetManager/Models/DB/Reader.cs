@@ -9,6 +9,13 @@ namespace BudgetManager.Models.DB
 {
     class Reader : IReader
     {
+        private string _fileName;
+
+        public Reader(string fileName)
+        {
+            _fileName = fileName;
+        }
+
         public int GetNextId()
         {
             throw new NotImplementedException();
