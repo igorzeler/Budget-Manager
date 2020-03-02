@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BudgetManager.Models.DB;
 using BudgetManager.Models.BL;
 
-namespace BudgetManager.Models.DB
+namespace BudgetManager.Models.DB.Files
 {
     class File : IReader, IWriter
     {
