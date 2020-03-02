@@ -68,7 +68,7 @@ namespace BudgetManager
             Console.Clear();
             Console.WriteLine("Display transactions");
 
-            List list = new List(_file);
+            List list = new List(_reader);
 
             list.DisplayList();
             Console.ReadKey();
@@ -80,7 +80,7 @@ namespace BudgetManager
             int year = DateTime.Now.Year;
             int month = DateTime.Now.Month;
 
-            Summary report = new Summary(_file);
+            Summary report = new Summary(_reader);
 
             report.DisplayReport(year, month);
             Console.ReadKey();
@@ -102,7 +102,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _writer);
+            Service service = new Service(_reader, _writer);
             service.AddOutcome(amount, name, date);
         }
         private static void AddIncome()
@@ -122,7 +122,7 @@ namespace BudgetManager
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_file, _writer);
+            Service service = new Service(_reader, _writer);
             service.AddIncome(amount, name, date);
         }
         private static void RemoveTransaction()
@@ -132,7 +132,7 @@ namespace BudgetManager
             var selectedId = Console.ReadLine();
             var id = int.Parse(selectedId);
 
-            Service service = new Service(_file, _writer);
+            Service service = new Service(_reader, _writer);
             service.RemoveById(id);
         }
     }
