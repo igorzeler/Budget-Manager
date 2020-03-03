@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetManager.Models;
-using BudgetManager.Models.DB.Files;
-using BudgetManager.Models.BL;
-using BudgetManager.Models.DB;
+﻿using BudgetManager.Models.DB;
 using BudgetManager.Models.Services;
 using BudgetManager.Models.Stats;
+using System;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace BudgetManager
 {
@@ -59,8 +53,6 @@ namespace BudgetManager
                     break;
                 case "5":
                     RemoveTransaction();
-                    break;
-                default:
                     break;
             }
         }

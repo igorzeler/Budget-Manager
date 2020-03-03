@@ -56,7 +56,7 @@ namespace BudgetManager.Models.DB
             var name = columns[1];
             var type = columns[2];
             var amount = decimal.Parse(columns[3]);
-            DateTime date = DateTime.ParseExact(columns[4], pattern, null);
+            var date = DateTime.ParseExact(columns[4], pattern, null);
 
             if (type == "I")
             {
@@ -64,7 +64,6 @@ namespace BudgetManager.Models.DB
             }
             
             return new Outcome(id, amount, name, date);
-            
         }
     }
 }
