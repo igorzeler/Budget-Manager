@@ -45,14 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\BL\Transaction.cs" />
-    <Compile Include="Models\BL\TransactionType.cs" />
     <Compile Include="Models\DB\File.cs" />
     <Compile Include="Models\BL\Income.cs" />
     <Compile Include="Models\DB\IReader.cs" />
     <Compile Include="Models\DB\IWriter.cs" />
     <Compile Include="Models\DB\Reader.cs" />
     <Compile Include="Models\DB\Writer.cs" />
-    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Services\Service.cs" />
     <Compile Include="Models\Stats\List.cs" />
     <Compile Include="Models\BL\Outcome.cs" />
     <Compile Include="Program.cs" />
