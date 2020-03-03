@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Models.Services
 {
-    class Service
+    internal class Service
     {
         private readonly IReader _reader;
         private readonly IWriter _writer;
