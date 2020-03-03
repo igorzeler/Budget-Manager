@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Models.DB
 {
-    interface IReader
+    internal interface IReader
     {
         IEnumerable<Transaction> ReadAll();
         int GetNextId();

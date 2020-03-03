@@ -20,18 +20,18 @@ namespace BudgetManager.Models.Services
 
         public void AddIncome(decimal amount, string name, DateTime date)
         {
-            int id = _reader.GetNextId();
+            var id = _reader.GetNextId();
 
-            Income income = new Income(id, amount, name, date);
+            var income = new Income(id, amount, name, date);
 
             _writer.Write(income);
         }
 
         public void AddOutcome(decimal amount, string name, DateTime date)
         {
-            int id = _reader.GetNextId();
+            var id = _reader.GetNextId();
 
-            Outcome outcome = new Outcome(id, amount, name, date);
+            var outcome = new Outcome(id, amount, name, date);
 
             _writer.Write(outcome);
         }

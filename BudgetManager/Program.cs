@@ -7,6 +7,7 @@ using BudgetManager.Models;
 using BudgetManager.Models.DB.Files;
 using BudgetManager.Models.BL;
 using BudgetManager.Models.DB;
+using BudgetManager.Models.Services;
 using BudgetManager.Models.Stats;
 
 namespace BudgetManager
@@ -15,6 +16,7 @@ namespace BudgetManager
     {
         private static IWriter _writer;
         private static IReader _reader;
+
         static void Main(string[] args)
         {
             _reader = new Reader("db.txt");

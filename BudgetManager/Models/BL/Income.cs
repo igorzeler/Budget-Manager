@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Models.BL
 {
-    class Income: Transaction
+    internal class Income: Transaction
     {
         public Income(int id, decimal amount, string name, DateTime date)
         {

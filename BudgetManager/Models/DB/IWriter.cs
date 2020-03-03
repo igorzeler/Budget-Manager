@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Models.DB
 {
-    interface IWriter
+    internal interface IWriter
     {
         void Write(Transaction transaction);
         void Remove(int id);

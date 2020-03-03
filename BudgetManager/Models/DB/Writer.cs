@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Models.DB
 {
-    class Writer : IWriter
+    internal class Writer : IWriter
     {
-        private string _fileName;
+        private readonly string _fileName;
 
         public Writer(string fileName)
         {
@@ -57,7 +57,7 @@ namespace BudgetManager.Models.DB
             return line + newLine;
         }
 
-        private bool HaveId(int id, string line)
+        private static bool HaveId(int id, string line)
         {
             string[] columns = line.Split(';');
             var lineId = int.Parse(columns[0]);

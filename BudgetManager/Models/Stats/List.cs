@@ -8,9 +8,9 @@ using BudgetManager.Models.DB;
 
 namespace BudgetManager.Models.Stats
 {
-    class List
+    internal class List
     {
-        private IReader _reader;
+        private readonly IReader _reader;
 
         public List(IReader reader)
         {

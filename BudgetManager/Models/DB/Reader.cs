@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace BudgetManager.Models.DB
 {
-    class Reader : IReader
+    internal class Reader : IReader
     {
         private readonly string _fileName;
 
@@ -47,7 +47,7 @@ namespace BudgetManager.Models.DB
             return transactions;
         }
 
-        private Transaction TextToTransaction(string line)
+        private static Transaction TextToTransaction(string line)
         {
             const string pattern = "dd-MM-yyyy";
             string[] columns = line.Split(';');
