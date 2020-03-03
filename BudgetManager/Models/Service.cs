@@ -10,8 +10,8 @@ namespace BudgetManager.Models
 {
     class Service
     {
-        private IReader _reader;
-        private IWriter _writer;
+        private readonly IReader _reader;
+        private readonly IWriter _writer;
         public Service(IReader reader, IWriter writer)
         {
             _reader = reader;
