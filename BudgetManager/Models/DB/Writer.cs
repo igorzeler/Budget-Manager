@@ -23,7 +23,6 @@ namespace BudgetManager.Models.DB
 
             foreach (var line in lines)
             {
-
                 if (!HaveId(id, line))
                 {
                     toSave.Add(line);

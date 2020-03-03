@@ -54,8 +54,6 @@ namespace BudgetManager
                 case "5":
                     RemoveTransaction();
                     break;
-                default:
-                    break;
             }
         }
 
