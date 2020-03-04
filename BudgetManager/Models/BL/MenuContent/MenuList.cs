@@ -10,13 +10,13 @@ namespace BudgetManager.Models.BL.MenuContent
 {
     class MenuList
     {
-        private static IReader _reader;
         public static void ShowList()
         {
             Console.Clear();
-            Console.WriteLine("Display transactions");
+            var reader = DbAccess.SetDbReader();
 
-            var list = new List(_reader);
+            Console.WriteLine("Display transactions");
+            var list = new List(reader);
 
             list.DisplayList();
             Console.ReadKey();

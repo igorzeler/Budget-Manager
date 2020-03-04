@@ -9,15 +9,12 @@ namespace BudgetManager
 {
     class Program
     {
-        private static IWriter _writer;
-        private static IReader _reader;
+        
 
         static void Main(string[] args)
         {
             var menu = new Menu();
 
-            _reader = new Reader("db.txt");
-            _writer = new Writer("db.txt");
             
             menu.RunMenu();
         }

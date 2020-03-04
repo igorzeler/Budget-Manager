@@ -10,16 +10,18 @@ namespace BudgetManager.Models.BL.MenuContent
 {
     class MenuRemove
     {
-        private static IWriter _writer;
-        private static IReader _reader;
         public static void RemoveTransaction()
         {
             Console.Clear();
+
+            var reader = DbAccess.SetDbReader();
+            var writer = DbAccess.SetDbWriter();
+
             Console.WriteLine("Input ID to remove: ");
             var selectedId = Console.ReadLine();
             var id = int.Parse(selectedId);
 
-            Service service = new Service(_reader, _writer);
+            Service service = new Service(reader, writer);
             service.RemoveById(id);
         }
     }

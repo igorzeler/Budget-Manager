@@ -10,12 +10,12 @@ namespace BudgetManager.Models.BL.MenuContent
 {
     class MenuOutcome
     {
-        private static IWriter _writer;
-        private static IReader _reader;
-
         public static void AddOutcome()
         {
             Console.Clear();
+
+            var reader = DbAccess.SetDbReader();
+            var writer = DbAccess.SetDbWriter();
 
             Console.WriteLine("New outcome");
 
@@ -30,7 +30,7 @@ namespace BudgetManager.Models.BL.MenuContent
             value = Console.ReadLine();
             DateTime date = DateTime.Parse(value);
 
-            Service service = new Service(_reader, _writer);
+            Service service = new Service(reader, writer);
             service.AddOutcome(amount, name, date);
         }
     }
