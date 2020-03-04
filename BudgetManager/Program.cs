@@ -11,7 +11,6 @@ namespace BudgetManager
     {
         private static IWriter _writer;
         private static IReader _reader;
-        
 
         static void Main(string[] args)
         {

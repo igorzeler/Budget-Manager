@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BudgetManager.Models.DB;
-using BudgetManager.Models.BL;
 
 namespace BudgetManager.Models.BL
 {
-    class Menu : IMenu
+    class Menu
     {
         private static IWriter _writer;
         private static IReader _reader;
@@ -24,6 +23,7 @@ namespace BudgetManager.Models.BL
             }
             while (selected != "6");
         }
+
 
         private static void DisplayMenu()
         {
