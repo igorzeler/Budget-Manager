@@ -11,15 +11,16 @@ namespace BudgetManager.Models.BL.MenuContent
     
     class MenuReport
     {
-        private static IReader _reader;
         public static void ShowReport()
         {
             Console.Clear();
 
+            var reader = DbAccess.SetDbReader();
+
             int year = DateTime.Now.Year;
             int month = DateTime.Now.Month;
 
-            Summary report = new Summary(_reader);
+            Summary report = new Summary(reader);
 
             report.DisplayReport(year, month);
             Console.ReadKey();
