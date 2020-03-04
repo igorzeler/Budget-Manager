@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using BudgetManager.Models.BL.MenuContent;
 using BudgetManager.Models.DB;
@@ -13,11 +14,11 @@ namespace BudgetManager.Models.BL
         private static IWriter _writer;
         private static IReader _reader;
 
+        MenuReport menuReport = new MenuReport();
+        MenuList menuList = new MenuList();
+
         public void RunMenu()
         {
-            var menuReport = new MenuReport();
-            var menuList = new MenuList();
-
             var selected = "";
             do
             {
