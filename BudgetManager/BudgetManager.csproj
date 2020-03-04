@@ -49,6 +49,7 @@
     <Compile Include="Models\BL\Income.cs" />
     <Compile Include="Models\DB\IReader.cs" />
     <Compile Include="Models\DB\IWriter.cs" />
+    <Compile Include="Models\DB\Menu.cs" />
     <Compile Include="Models\DB\Reader.cs" />
     <Compile Include="Models\DB\Writer.cs" />
     <Compile Include="Models\Services\Service.cs" />

@@ -8,5 +8,7 @@ namespace BudgetManager.Models.DB
 {
     class Menu
     {
+        private static IWriter _writer;
+        private static IReader _reader;
     }
 }
