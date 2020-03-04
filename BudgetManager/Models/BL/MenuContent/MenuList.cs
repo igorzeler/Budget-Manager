@@ -11,12 +11,12 @@ namespace BudgetManager.Models.BL.MenuContent
     class MenuList
     {
         private static IReader _reader;
-        private static void ShowList()
+        public static void ShowList()
         {
             Console.Clear();
             Console.WriteLine("Display transactions");
 
-            List list = new List(_reader);
+            var list = new List(_reader);
 
             list.DisplayList();
             Console.ReadKey();
