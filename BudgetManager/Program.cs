@@ -3,6 +3,7 @@ using BudgetManager.Models.Services;
 using BudgetManager.Models.Stats;
 using System;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using BudgetManager.Models.BL;
 
 namespace BudgetManager
 {
@@ -13,50 +14,15 @@ namespace BudgetManager
 
         static void Main(string[] args)
         {
+            var menu = new Menu();
+
             _reader = new Reader("db.txt");
             _writer = new Writer("db.txt");
-            var selected = "";
-            do
-            {
-                DisplayMenu();
-                selected = Console.ReadLine();
-                RunSelected(selected);
-            }
-            while (selected != "6");
+            
+            menu.RunMenu();
+            
         }
-        private static void DisplayMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("1 - Transaction list");
-            Console.WriteLine("2 - Monthly summary");
-            Console.WriteLine("3 - Add outcome");
-            Console.WriteLine("4 - Add income");
-            Console.WriteLine("5 - Remove transaction");
-            Console.WriteLine("6 - Exit");
-            Console.WriteLine("Chosen action: ");
-        }
-        private static void RunSelected(string selected)
-        {
-            switch (selected)
-            {
-                case "1":
-                    ShowList();
-                    break;
-                case "2":
-                    ShowReport();
-                    break;
-                case "3":
-                    AddOutcome();
-                    break;
-                case "4":
-                    AddIncome();
-                    break;
-                case "5":
-                    RemoveTransaction();
-                    break;
-            }
-        }
-
+        
         private static void ShowList()
         {
             Console.Clear();
