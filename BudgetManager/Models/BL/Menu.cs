@@ -49,7 +49,7 @@ namespace BudgetManager.Models.BL
                     MenuOutcome.AddOutcome();
                     break;
                 case "4":
-                    AddIncome();
+                    MenuIncome.AddIncome();
                     break;
                 case "5":
                     RemoveTransaction();
