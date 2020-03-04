@@ -13,7 +13,7 @@ namespace BudgetManager.Models.BL.MenuContent
         private static IWriter _writer;
         private static IReader _reader;
 
-        private static void AddOutcome()
+        public static void AddOutcome()
         {
             Console.Clear();
 
