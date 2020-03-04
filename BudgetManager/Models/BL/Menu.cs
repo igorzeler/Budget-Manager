@@ -16,6 +16,8 @@ namespace BudgetManager.Models.BL
         public void RunMenu()
         {
             var menuReport = new MenuReport();
+            var menuList = new MenuList();
+
             var selected = "";
             do
             {
