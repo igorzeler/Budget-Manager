@@ -46,7 +46,7 @@ namespace BudgetManager.Models.BL
                     MenuReport.ShowReport();
                     break;
                 case "3":
-                    AddOutcome();
+                    MenuOutcome.AddOutcome();
                     break;
                 case "4":
                     AddIncome();
