@@ -14,10 +14,11 @@ namespace BudgetManager
 
         static void Main(string[] args)
         {
-            _reader = new Reader("db.txt");
-            _writer = new Writer("db.txt");
             var menu = new Menu();
 
+            _reader = new Reader("db.txt");
+            _writer = new Writer("db.txt");
+            
             menu.RunMenu();
             
         }

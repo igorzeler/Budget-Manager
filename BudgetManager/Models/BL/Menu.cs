@@ -11,11 +11,6 @@ namespace BudgetManager.Models.BL
 {
     class Menu
     {
-        private static IWriter _writer;
-        private static IReader _reader;
-        
-        MenuList menuList = new MenuList();
-
         public void RunMenu()
         {
             var selected = "";
@@ -27,7 +22,6 @@ namespace BudgetManager.Models.BL
             }
             while (selected != "6");
         }
-
 
         private static void DisplayMenu()
         {
@@ -46,7 +40,7 @@ namespace BudgetManager.Models.BL
             switch (selected)
             {
                 case "1":
-                    ShowList();
+                    MenuList.ShowList();
                     break;
                 case "2":
                     MenuReport.ShowReport();
