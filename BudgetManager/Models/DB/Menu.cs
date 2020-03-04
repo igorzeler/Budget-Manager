@@ -10,5 +10,17 @@ namespace BudgetManager.Models.DB
     {
         private static IWriter _writer;
         private static IReader _reader;
+
+        public void RunMenu()
+        {
+            var selected = "";
+            do
+            {
+                DisplayMenu();
+                selected = Console.ReadLine();
+                RunSelected(selected);
+            }
+            while (selected != "6");
+        }
     }
 }
