@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetManager.Models.DB;
+using BudgetManager.Models.BL;
 
-namespace BudgetManager.Models.DB
+namespace BudgetManager.Models.BL
 {
-    class Menu
+    class Menu : IMenu
     {
         private static IWriter _writer;
         private static IReader _reader;

@@ -11,12 +11,13 @@ namespace BudgetManager
     {
         private static IWriter _writer;
         private static IReader _reader;
-        private static IMenu _menu;
+        
 
         static void Main(string[] args)
         {
             _reader = new Reader("db.txt");
             _writer = new Writer("db.txt");
+            var menu = new Menu();
             var selected = "";
             do
             {

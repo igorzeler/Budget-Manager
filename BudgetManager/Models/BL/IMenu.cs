@@ -10,5 +10,6 @@ namespace BudgetManager.Models.BL
     {
         void RunMenu();
         void DisplayMenu();
+        void RunSelected(string selected);
     }
 }
