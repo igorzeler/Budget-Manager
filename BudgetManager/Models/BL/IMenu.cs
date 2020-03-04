@@ -8,5 +8,7 @@ namespace BudgetManager.Models.BL
 {
     interface IMenu
     {
+        void RunMenu();
+        void DisplayMenu();
     }
 }
