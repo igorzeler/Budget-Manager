@@ -3,6 +3,7 @@ using BudgetManager.Models.Services;
 using BudgetManager.Models.Stats;
 using System;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using BudgetManager.Models.BL;
 
 namespace BudgetManager
 {
@@ -10,6 +11,7 @@ namespace BudgetManager
     {
         private static IWriter _writer;
         private static IReader _reader;
+        private static IMenu _menu;
 
         static void Main(string[] args)
         {
