@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BudgetManager.Models.BL.MenuContent;
 using BudgetManager.Models.DB;
 
 namespace BudgetManager.Models.BL
@@ -14,6 +15,7 @@ namespace BudgetManager.Models.BL
 
         public void RunMenu()
         {
+            var menuReport = new MenuReport();
             var selected = "";
             do
             {
@@ -45,7 +47,7 @@ namespace BudgetManager.Models.BL
                     ShowList();
                     break;
                 case "2":
-                    ShowReport();
+                    MenuReport.ShowReport();
                     break;
                 case "3":
                     AddOutcome();
