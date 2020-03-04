@@ -13,8 +13,7 @@ namespace BudgetManager.Models.BL
     {
         private static IWriter _writer;
         private static IReader _reader;
-
-        MenuReport menuReport = new MenuReport();
+        
         MenuList menuList = new MenuList();
 
         public void RunMenu()
