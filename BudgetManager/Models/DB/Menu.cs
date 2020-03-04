@@ -34,5 +34,27 @@ namespace BudgetManager.Models.DB
             Console.WriteLine("6 - Exit");
             Console.WriteLine("Chosen action: ");
         }
+
+        private static void RunSelected(string selected)
+        {
+            switch (selected)
+            {
+                case "1":
+                    ShowList();
+                    break;
+                case "2":
+                    ShowReport();
+                    break;
+                case "3":
+                    AddOutcome();
+                    break;
+                case "4":
+                    AddIncome();
+                    break;
+                case "5":
+                    RemoveTransaction();
+                    break;
+            }
+        }
     }
 }
