@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\BL\MenuContent\MenuReport.cs" />
     <Compile Include="Models\BL\Transaction.cs" />
     <Compile Include="Models\DB\File.cs" />
     <Compile Include="Models\BL\Income.cs" />
