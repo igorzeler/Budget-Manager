@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Models\BL\MenuContent\MenuIncome.cs" />
     <Compile Include="Models\BL\MenuContent\MenuOutcome.cs" />
+    <Compile Include="Models\BL\MenuContent\MenuRemove.cs" />
     <Compile Include="Models\BL\MenuContent\MenuReport.cs" />
     <Compile Include="Models\BL\Transaction.cs" />
     <Compile Include="Models\DB\File.cs" />
